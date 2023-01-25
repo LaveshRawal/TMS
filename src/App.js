@@ -4,9 +4,9 @@ import Nav from "./components/Header_Navbar/Navbar";
 import TicketList from "./pages/TicketList";
 import NewTicketForm from "./components/CreateTicket/NewTicketForm";
 import { Layout, Space } from "antd";
-import Sidebar from "./components/Sidebar/Sidebar";
 const { Header, Footer, Sider, Content } = Layout;
-
+import Sidebar from "./components/Sidebar/Sidebar";
+import TMSFooter from "./components/Footer/index";
 const headerStyle = {
   textAlign: "center",
   color: "#fff",
@@ -43,10 +43,8 @@ const App = () => {
     <BrowserRouter>
       <Space direction="vertical" style={{ width: "100%" }} size={[0, 48]}>
         <Layout>
-          <Header style={headerStyle}>
-            <Nav />
-          </Header>
-          <Layout>
+          <Header style={headerStyle}><Nav /></Header>
+           <Layout>
             <Sider style={siderStyle}><Sidebar /></Sider>
             <Content style={contentStyle}>
               <Routes>
@@ -57,11 +55,9 @@ const App = () => {
               </Routes>
             </Content>
           </Layout>
-          <Footer style={footerStyle}>
-            <Footer />
-          </Footer>
-        </Layout>
-      </Space>
+          <Footer style={footerStyle}> <TMSFooter /> </Footer>
+          </Layout>                        
+          </Space>
     </BrowserRouter>
   );
 };

@@ -1,13 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 .footer {
   display: flex;
-  background-color:  rgb(100, 32, 32);
-  color: aliceblue;
-  height: 10rem;
   justify-content: center;
   align-items: center;
 }
@@ -17,6 +10,5 @@
   text-decoration: none;
   display: flex;
   margin-left: 2rem;
-  margin-top: 0.5rem;
   justify-content: center;
 }
