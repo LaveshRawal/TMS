@@ -1,0 +1,18 @@
+.nav {
+  display: flex;
+  color: aliceblue;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: aliceblue;
+  text-decoration: none;
+  display: flex;
+  margin-left: 2rem;
+  font-size: 1rem;
+}
+
+.search {
+  margin-left: auto;
+  margin-right: 1rem;
+}

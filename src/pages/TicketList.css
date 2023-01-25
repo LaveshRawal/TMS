@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+    height: auto;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: aliceblue;
+    color: black;
+  }
+  tr{
+    background-color: beige;
+    color: black;
+    line-height: 20px;
+  }
+  
+ 
+  h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+  }
