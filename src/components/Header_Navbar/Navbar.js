@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import "./styles.css"
-import {SearchOutlined} from '@ant-design/icons';
+import { Input, Space } from 'antd';
+const { Search } = Input;
 
+const onSearch = (value) => console.log(value);
 const index = () => {
   return (
     <nav className='nav'>
@@ -11,16 +13,11 @@ const index = () => {
       <Link to="/newticketform">Create a Request</Link>
       <Link to="/createuserac">Create User Account</Link>
       <Link to="/sla">Create Service Contract</Link>
-      <div className="search">
-            <form action="#">
-                <input type="text"
-                    placeholder=" Search Tickets"
-                    name="search" />
-                <button>
-                <SearchOutlined />
-                </button>
-            </form>
-        </div>
+      
+      <Space direction="vertical" className='search'>
+      <Search placeholder="input search text" allowClear onSearch={onSearch} style={{ width: 200 }} />
+     </Space>
+     
     </nav>
   )
 }

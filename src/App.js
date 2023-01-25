@@ -4,6 +4,7 @@ import Nav from "./components/Header_Navbar/Navbar";
 import TicketList from "./pages/TicketList";
 import NewTicketForm from "./components/CreateTicket/NewTicketForm";
 import { Layout, Space } from "antd";
+import Sidebar from "./components/Sidebar/Sidebar";
 const { Header, Footer, Sider, Content } = Layout;
 
 const headerStyle = {
@@ -19,8 +20,8 @@ const contentStyle = {
   textAlign: "center",
   minHeight: 120,
   lineHeight: "10px",
-  color: "#fff",
-  backgroundColor: "#156ee9",
+  color: "023047",
+  backgroundColor: "#fefae0",
 };
 
 const siderStyle = {
@@ -46,7 +47,7 @@ const App = () => {
             <Nav />
           </Header>
           <Layout>
-            <Sider style={siderStyle}>Sider</Sider>
+            <Sider style={siderStyle}><Sidebar /></Sider>
             <Content style={contentStyle}>
               <Routes>
                 <Route path="/" element={<TicketList />} />
