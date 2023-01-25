@@ -1,21 +1,27 @@
 import React, { useState } from 'react';
 
-const NewTicketForm = () => {
+function TicketForm() {
   const [ticket, setTicket] = useState({
     title: '',
     description: '',
+    status: '',
+    createdAt: '',
+    updatedAt: '',
     priority: '',
-    category: ''
+    assignee: '',
+    category: '',
+    customer: '',
+    customerEmail: '',
   });
 
-  const handleInputChange = (event) => {
+  function handleChange(event) {
     const { name, value } = event.target;
     setTicket({ ...ticket, [name]: value });
   }
 
-  const handleSubmit = (event) => {
+  function handleSubmit(event) {
     event.preventDefault();
-    // Send the ticket data to the server
+    // Send the ticket data to the server or perform some other action here
     console.log(ticket);
   }
 
@@ -27,7 +33,7 @@ const NewTicketForm = () => {
           type="text"
           name="title"
           value={ticket.title}
-          onChange={handleInputChange}
+          onChange={handleChange}
         />
       </label>
       <br />
@@ -36,7 +42,39 @@ const NewTicketForm = () => {
         <textarea
           name="description"
           value={ticket.description}
-          onChange={handleInputChange}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>
+        Status:
+        <select
+          name="status"
+          value={ticket.status}
+          onChange={handleChange}
+        >
+          <option value="open">Open</option>
+          <option value="closed">Closed</option>
+        </select>
+      </label>
+      <br />
+      <label>
+        Created At:
+        <input
+          type="text"
+          name="createdAt"
+          value={ticket.createdAt}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>
+        Updated At:
+        <input
+          type="text"
+          name="updatedAt"
+          value={ticket.updatedAt}
+          onChange={handleChange}
         />
       </label>
       <br />
@@ -45,7 +83,7 @@ const NewTicketForm = () => {
         <select
           name="priority"
           value={ticket.priority}
-          onChange={handleInputChange}
+          onChange={handleChange}
         >
           <option value="low">Low</option>
           <option value="medium">Medium</option>
@@ -54,18 +92,48 @@ const NewTicketForm = () => {
       </label>
       <br />
       <label>
+        Assignee:
+        <input
+          type="text"
+          name="assignee"
+          value={ticket.assignee}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>
         Category:
         <input
           type="text"
           name="category"
           value={ticket.category}
-          onChange={handleInputChange}
+          onChange={handleChange}
         />
       </label>
       <br />
-      <button type="submit">Create Ticket</button>
-    </form>
-  );
+      <label>
+        Customer:
+        <input
+          type="text"
+          name="customer"
+          value={ticket.customer}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>
+        Customer Email:
+        <input
+       type="email"
+       name="customerEmail"
+       value={ticket.customerEmail}
+       onChange={handleChange}
+     />
+</label>
+<br />
+<input type="submit" value="Create Ticket" />
+</form>
+);
 }
 
-export default NewTicketForm;
+export default TicketForm;
