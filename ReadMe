@@ -1,0 +1,19 @@
+To create a Reactjs app for helpdesk ticket management, you will need to follow these steps:
+
+Create a new Reactjs project using create-react-app command.
+Set up routing for your app using react-router library.
+Create components for the different views in your app such as a list view for displaying all tickets, a detail view for displaying a single ticket, and a form view for creating new tickets.
+Use a state management library such as Redux to manage the state of your application.
+Use axios or fetch to make API calls to a backend server that will handle the creation, reading, updating, and deleting of tickets.
+Style your app using CSS or a CSS-in-JS library such as styled-components.
+It's a good idea to use a library for the UI design like "Material-UI" or "Ant Design" to make the design process easy.
+
+I recommend you to start by building a simple version of the app and then iterate on it, adding more features and functionalities as you go.
+
+you can now add more functionality and features like adding new tickets, viewing a single ticket, and updating or deleting existing tickets.
+
+npm install react-router-dom
+npm install @reduxjs/toolkit
+npm install axios
+json-server --watch db.json
+http://localhost:3000/tickets

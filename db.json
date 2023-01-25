@@ -1,0 +1,65 @@
+{
+    "tickets": [
+      {
+        "title": "Unable to access email",
+        "description": "User is unable to access their email account on the company server.",
+        "status": "Open",
+        "createdAt": "2022-01-01T12:00:00Z",
+        "updatedAt": "2022-01-01T12:30:00Z",
+        "priority": "High",
+        "assignee": "John Smith",
+        "category": "Email",
+        "customer": "Jane Doe",
+        "customerEmail": "jane.doe@example.com"
+      },
+      {
+        "title": "Printer not working",
+        "description": "The office printer is not printing and displays an error message.",
+        "status": "Open",
+        "createdAt": "2022-01-02T10:00:00Z",
+        "updatedAt": "2022-01-02T10:15:00Z",
+        "priority": "Medium",
+        "assignee": "John Smith",
+        "category": "Hardware",
+        "customer": "Jane Doe",
+        "customerEmail": "jane.doe@example.com"
+      },
+      {
+        "title": "Printer not working",
+        "description": "The office printer is not printing and displays an error message.",
+        "status": "Open",
+        "createdAt": "2022-01-02T10:00:00Z",
+        "updatedAt": "2022-01-02T10:15:00Z",
+        "priority": "Medium",
+        "assignee": "John Smith",
+        "category": "Hardware",
+        "customer": "Jane Doe",
+        "customerEmail": "jane.doe@example.com"
+      },
+      {
+        "title": "Printer not working",
+        "description": "The office printer is not printing and displays an error message.",
+        "status": "Open",
+        "createdAt": "2022-01-02T10:00:00Z",
+        "updatedAt": "2022-01-02T10:15:00Z",
+        "priority": "Medium",
+        "assignee": "John Smith",
+        "category": "Hardware",
+        "customer": "Jane Doe",
+        "customerEmail": "jane.doe@example.com"
+      },
+      {
+        "title": "Printer not working",
+        "description": "The office printer is not printing and displays an error message.",
+        "status": "Open",
+        "createdAt": "2022-01-02T10:00:00Z",
+        "updatedAt": "2022-01-02T10:15:00Z",
+        "priority": "Medium",
+        "assignee": "John Smith",
+        "category": "Hardware",
+        "customer": "Jane Doe",
+        "customerEmail": "jane.doe@example.com"
+      }
+    ]
+  }
+  
