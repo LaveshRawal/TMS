@@ -1,0 +1,22 @@
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+    
+}
+
+form input{
+    font-display:inherit;
+   
+    
+}
+
+form label {
+    justify-content: left;
+    font-weight: 400;
+    margin-right: 50px;
+    padding: 2px;
+    
+}
